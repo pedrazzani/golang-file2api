@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
+    <meta http-equiv='refresh' content='10'>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+ </head>
+  <body>
+    <div class="container-fluid">
+    	<div class="row mt-5">
+    		<div class="col">
+		    	<table class="table table-striped ">
+		    		<tbody>
+						  {{range .}}
+						  	<tr>
+									<td class="text-start fs-2">
+									  {{.ItemCode}}
+									</td>
+									<td class="fs-2">
+									  {{.DescLine1}}
+									</td>
+									<td class="text-end fs-2">
+									  R$ {{.Value}}
+									</td>
+								</tr>
+						  {{end}}
+						</tbody>
+					</table>
+    		</div>
+    	</div>
+		</div>
+  </body>
+</html>
